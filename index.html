@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Drive Motor Driving School</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9e9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.poster {
+    width: 100%;
+    max-width: 550px;
+    min-height: 850px;
+    background:
+    linear-gradient(135deg, transparent 20%, #f8f8f8 20%),
+    #e6e8e9;
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    text-align: center;
+}
+
+/* HEADER */
+
+.logo {
+    font-size: 19px;
+    font-weight: 900;
+    color: #ed3b0b;
+    text-align: left;
+}
+
+.logo small {
+    display: block;
+    font-size: 11px;
+    color: #173d82;
+    letter-spacing: 2px;
+}
+
+.heading {
+    margin-top: 30px;
+    text-align: left;
+    color: #f0440a;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: .95;
+}
+
+.heading h2 {
+    font-size: clamp(25px, 7vw, 40px);
+}
+
+.heading h1 {
+    font-size: clamp(45px, 11vw, 70px);
+}
+
+.tagline {
+    background: linear-gradient(90deg, #f52215, #ff9e00);
+    color: white;
+    padding: 8px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* CAR IMAGE */
+
+.car-area {
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-area img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+}
+
+.stop {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background: #ed1515;
+    color: white;
+    padding: 15px 9px;
+    font-weight: bold;
+    border: 4px solid white;
+    outline: 2px solid red;
+    z-index: 3;
+}
+
+.cones {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 42px;
+    z-index: 3;
+}
+
+/* COURSES */
+
+.course-title {
+    display: inline-block;
+    padding: 8px 25px;
+    background: #ff8a00;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.courses li {
+    list-style: none;
+}
+
+.courses li::before {
+    content: "● ";
+    color: #f0440a;
+}
+
+/* CONTACT */
+
+.contact {
+    margin-top: 25px;
+    background: #111;
+    color: white;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact span {
+    background: #f0440a;
+    padding: 7px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #163c80;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social a:hover {
+    color: #f0440a;
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #333;
+}
+
+@media(max-width:400px) {
+    .poster { padding: 15px; }
+    .car-area { height: 240px; }
+    .courses { font-size: 11px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="poster">
+
+    <div class="logo">
+        DREAM DRIVE
+        <small>MOTOR DRIVING SCHOOL</small>
+    </div>
+
+    <div class="heading">
+        <h2>Get Your</h2>
+        <h1>DRIVING<br>LICENCE</h1>
+    </div>
+
+    <div class="tagline">
+        LEARN TO DRIVE WITH CONFIDENCE
+    </div>
+
+    <div class="car-area">
+
+        <div class="stop">STOP</div>
+
+        <!-- Replace car.png with your car photo -->
+        <img src="car.jpg" alt="Driving School Car">
+
+        <div class="cones">🚧 🚗</div>
+
+    </div>
+
+    <div class="course-title">OUR COURSES</div>
+
+    <div class="courses">
+        <ul>
+            <li>Motorcycle Training</li>
+            <li>Light Vehicle Driving</li>
+            <li>Automatic Driving</li>
+            <li>Road Safety Training</li>
+        </ul>
+
+        <ul>
+            <li>Refresher Driving Courses</li>
+            <li>Defensive Driving</li>
+            <li>Beginner Courses</li>
+            <li>Parking Training</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        BOOK NOW <span>+91 7756834745</span>
+    </div>
+
+    
+<style>
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.social a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #222;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.social svg {
+    width: 38px;
+    height: 38px;
+    transition: .3s;
+}
+
+.social a:hover svg {
+    transform: scale(1.2);
+}
+</style>
+
+<div class="social">
+
+    <!-- Instagram Logo -->
+    <a href="https://instagram.com/devalgupta143" target="_blank">
+        <svg viewBox="0 0 24 24">
+            <defs>
+                <linearGradient id="insta" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#ffb000"/>
+                    <stop offset="50%" stop-color="#f00075"/>
+                    <stop offset="100%" stop-color="#8134af"/>
+                </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="6"
+                  fill="none" stroke="url(#insta)" stroke-width="2.5"/>
+            <circle cx="12" cy="12" r="4.5"
+                    fill="none" stroke="#e1306c" stroke-width="2"/>
+            <circle cx="18" cy="6.5" r="1.3" fill="#e1306c"/>
+        </svg>
+        Instagram
+    </a>
+
+    <!-- WhatsApp Logo -->
+    <a href="https://wa.me/917756834745" target="_blank">
+        <svg viewBox="0 0 24 24" fill="#25D366">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-3-.2-.3A8 8 0 0 1 12 4zm-3.5 3.3c-.3 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.1 4.5 2.5 1 3.1.8 3.6.7.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4-.3-.1-1.8-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.2-.1.3-.3.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.5-.5-.5-.7-.5z"/>
+        </svg>
+        WhatsApp
+    </a>
+
+    <!-- Google Reviews Logo -->
+    <a href="https://g.page/r/CcPolkrM1D92ECk/review" target="_blank">
+        <svg viewBox="0 0 48 48">
+            <path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15z"/>
+            <path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.6-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.6-11.4-8.4H5.8v5.2A20 20 0 0 0 24 44z"/>
+            <path fill="#FBBC05" d="M12.6 27.5a12 12 0 0 1 0-7v-5.2H5.8a20 20 0 0 0 0 17.4z"/>
+            <path fill="#EA4335" d="M24 12.1c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 6.1 29.5 4 24 4A20 20 0 0 0 5.8 15.3l6.8 5.2C14.2 15.7 18.7 12.1 24 12.1z"/>
+        </svg>
+        Google Reviews
+    </a>
+
+</div>
+
+
+    <footer>
+        DREAM DRIVE MOTOR DRIVING SCHOOL
+        <br>
+        Your Safety, Our Priority
+    </footer>
+
+</div>
+
+</body>
+</html>
